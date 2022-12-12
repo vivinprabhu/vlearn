@@ -26,28 +26,35 @@ body{
     color: red;
 }
 .h12{
-    color: darkkhaki;
+    font-size: 120%;
+    color: burlywood;
 }
+
 a{
+    font-size: 60%;
     text-decoration: none;
     color: black;
 }
+
 ul{
     background-color: grey;
-    height: 10%;
+    height: 5%;
 }
+
 li{
     font-size: 250%;
     display: inline-block;
-    height: 10%;
+    height: 5%;
     padding: 0 2%;
-    line-height: 0 10%;
+    line-height: 0 5%;
     background-color: burlywood;
 }
+
 li:hover{
-    background-color: darkgoldenrod;
+    background-color: grey;
     border-style: groove;
 }
+
 button{
     font-size: 100%;
     background-color: burlywood;
@@ -55,45 +62,54 @@ button{
     border-radius: 10%;
     margin: 5% auto;
 }
+
 .imge{
     height: auto;
     width: auto;
 }
+
 #upload{
     position: static;
     background-color: white;
-    font-size: 150%;
+    font-size: 130%;
     color: black;
     min-height: 100%;
 }
+
 #upl{
     color: red;
     font-size: 200%;
 }
+
 #content{
-    width: 30%;
-    font-size: 150%;
+    width: 60%;
+    font-size: 120%;
     background-color: whitesmoke;
     border-radius: 20px;
     fill-opacity: 50%;
     color: black;
     margin:auto;
 }
+
 #image{
     margin: 5%;
     text-shadow: 10px 15px 10px 15px white;
 }
+
 #departments{
     font-size: 150%;
     color: white;
     position: static;
 }
+
 #i1{
-    width: 10%;
-    height: 10%;
+    position:static;
+    width: 5%;
+    height: 1%;
     float: left;
-    margin: 85px;
+    margin: 90px;
 }
+
 #c1{
     width: 12%;
     height: 60%;
@@ -103,6 +119,7 @@ button{
     fill-opacity: 30%;
     border-radius: 10%;
 }
+
 #c2{
     width: 12%;
     height: 20%;
@@ -112,6 +129,7 @@ button{
     fill-opacity: 30%;
     border-radius: 10%;
 }
+
 #c3{
     width: 12%;
     height: 20%;
@@ -121,6 +139,7 @@ button{
     fill-opacity: 30%;
     border-radius: 10%;
 }
+
 #c4{
     width: 12%;
     height: 20%;
@@ -130,10 +149,13 @@ button{
     fill-opacity: 30%;
     border-radius: 10%;
 }
+
 #services{
+    position: static;
     color: white;
     font-size: 150%;
 }
+
 .ima1{
     width: 100% ;
 }
@@ -146,38 +168,42 @@ button{
 .ima4{
     width: 100% ;
 }
+
 #btn{
-    width: 70%;
+    width: 20%;
+    height: 0%;
     margin: 2% auto;
-    font-size: 200%;
+    font-size: 100%;
     background-color: burlywood;
     border-radius: 10%;
     box-shadow: 0 15px 25px rgb(10, 10, 10);
 }
 
 a:hover{
-    text-transform: uppercase;
-    color:black;
+    cursor: pointer;
 }
 
 #log{
-    width: 7%;
-    height: 5%;
     background-color: blanchedalmond;
+    text-align: center;
+    width: 5%;
     float: right;
-    margin: 0 2% auto ;
-    font-size: 100%;
+    margin: -5% auto;
     border-radius: 50%;
+    font-size: 150%;
 }
+
 #log:hover{
-    background-color: darkgoldenrod;
+    background-color: burlywood;
 }
+
 .info{
     margin: auto;
 }
+
 .card {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
     margin: 10%;
     background: grey;
@@ -186,19 +212,24 @@ a:hover{
     transition: 0.4s ease-out;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   }
+
   .card:hover {
     transform: translateY(20px);
   }
+
   .card:hover:before {
     opacity: 1;
   }
+
   .card:hover .info {
     opacity: 1;
     transform: translateY(0px);
   }
+
   .card:before {
     content: "";
     position: absolute;
+    position: fixed;
     display: block;
     width: 100%;
     height: 100%;
@@ -208,6 +239,7 @@ a:hover{
     transition: 0.5s;
     opacity: 0;
   }
+
   .card img {
     width: 100%;
     height: 100%;
@@ -218,6 +250,7 @@ a:hover{
     left: 0;
     border-radius: 15px;
   }
+
   .card .info {
     position: relative;
     z-index: 3;
@@ -226,27 +259,66 @@ a:hover{
     transform: translateY(30px);
     transition: 0.5s;
   }
+
   .card .info a {
-    padding: 0.6rem;
     outline: none;
     border: none;
     border-radius: 3px;
-    background: burlywood;
+    background: white;
     color: black;
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s ease;
   }
+
   .card .info a:hover {
-    background: darkgoldenrod;
+    background: red;
     color: black;
   }
+
   .i2{
     width: 5%;
     height: 5%;
     margin: 10%;
   }
+
   #i{
     width: 100%;
   }
 
+.h13{
+    position: absolute;
+    left: 47%;
+    top: 100%;
+}
+
+.i{
+    position: absolute;
+    top: 105%;
+    left: 10%;
+    width: 5%;
+    height: 5%;
+    float: left;
+}
+
+.il{
+    position: absolute;
+    top: 105%;
+    left: 30%;
+    width: 5%;
+    height: 5%;
+    float: left;
+}
+
+.image1{
+    width: 100%;
+}
+
+.upload{
+    cursor: pointer;
+}
+
+#about{
+    font-size: 150%;
+    position: relative;
+}

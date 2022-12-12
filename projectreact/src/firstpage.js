@@ -1,43 +1,37 @@
 import React from "react";
 import './firstpage.css' ;
-import image from './Firstpage.jpg';
 import {Link} from "react-router-dom";
 
 class Firstpage extends React.Component{
 
     render(){
      const mystyle={
-         backgroundImage:`url('${image}')`,
-        
-         height:'100vh',
-         width:'100vh',
-         marginTop:'0px',
-         backgroundSize:'contain',
-         backgroundRepeat:'no-repeat',
-         backgroundPosition:'left',
+        height:'100vh',
+        width:'100vh',
      };
     
-         return(
-             <div style={mystyle}>
+    return(
+        <div class="background1">
+        <div style={mystyle}>
 
-    <form>
+        <form>
 
-    <div>
-        <h1>V</h1>
+            <div>
+                <h1>V</h1>
     
-        <h2>-LEARN</h2>
+                <h2>-LEARN</h2>
 
-        <Link to="/login"><input class='btn' type='submit' value='LOGIN'></input></Link>
+                <Link to="/login"><input class='btn' type='submit' value='LOGIN'></input></Link>
 
     
-        <Link to="/signup"><input class='btn2' type='submit' value="Don't have an account"></input></Link>
+                <Link to="/signup"><input class='btn2' type='submit' value="Don't have an account"></input></Link>
         
-    </div>
+            </div>
 
+         </form>
 
-    </form>
-
-</div>
+        </div>
+        </div>
     );
 }
 }

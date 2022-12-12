@@ -7,8 +7,12 @@ import Signup from "./Signup";
 import Home from "./home";
 import Upload from "./upload";
 import Forgotpassword from "./forgotpassword";
+import Feedback from "./Feedback";
+import Four from "./fourbutton";
+import Nofile from "./nofile";
 
 import{BrowserRouter as Router,Routes,Route} from "react-router-dom";
+
 export default function RouteApp(){
     return(
         <Router>
@@ -19,9 +23,13 @@ export default function RouteApp(){
                 <Route path="/signup" element={<Signup/>}></Route>
                 <Route path="/Home" element={<Home/>}></Route>
                 <Route path="/Upload" element={<Upload/>}></Route>
+                <Route path="/Feedback" element={<Feedback/>}></Route>
+                <Route path="/Four" element={<Four/>}></Route>
+                <Route path="/Nofile" element={<Nofile/>}></Route>
             </Routes>
         </Router>
     )
 }
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<RouteApp/>);

@@ -1,8 +1,11 @@
 import React from "react";
-import { BrowserRouter, Routes, Route,Router ,Link} from "react-router-dom";
 import './home.css' ;
 
-import imge from './Screenshot_20221206_125821.png';
+import { Link } from "react-router-dom";
+
+
+import imge from './v-learn-high-resolution-logo-color-on-transparent-background.png';
+
 import cse from './Cse.png' ;
 import it from './it.png' ;
 import ece from './ece.png' ;
@@ -11,12 +14,15 @@ import mech from './mech.png' ;
 import civil from './civil.png' ;
 import aids from './ai.png' ;
 import aiml from './aiml.png' ;
-import cyber from './cybersecurity1 (2).png' ;
+import cyber from './cybersecurity1.png' ;
 import metro from './mechatronics.png' ;
+
 import notes from './notes1.png' ;
 import ques from './question.png' ;
 import video from './video-lecture.png' ;
 import placement from './promotion.png' ;
+import email from './gmail.png' ;
+import insta from './instagram.png' ;
 
 function Home()
 {
@@ -29,30 +35,33 @@ function Home()
             </div>
 
             <div id="log">
-                <Link to="/login"><a>Logout</a></Link>
+                <Link to="/login">Logout</Link>
             </div>
         <ul>
             <li><a href='#home'>Home</a></li>
-            <li><a href='#upload'>Upload</a></li>
-            <li><a href='#services'>Services</a></li>
             <li><a href='#departments'>Departments</a></li>
-            <li><a href='#con'>Contact</a></li>
+            <li><a href='#services'>Services</a></li>
+            <li><a href='#upload'>Upload</a></li>
+            <Link to="/Feedback"><li><a href='#Feedback'>Feedback</a></li></Link>
+            <li><a href='#about'>About us</a></li>
         </ul>
         </div>
+
 
         <div id='home'>
             <div id='content'>
                 <div class="h12">
-
-                    <p>Online Study Material</p>
+                    <p>Our Story</p>
                 </div>
                <p>
-                Subject-notes , previous year question<br/>
-                papers , Tutorial videos , <br/>
-                placement preparation contents and what not..!
+                    V-LEARN is a open community and a global platform for students for learning through online. As most of the online websites provide courses and contents with premium payments we providing a economy-free courses.<br></br><br></br>
+                    LEARNING IS A CONSTANT PROCESS-THAT NEVER ENDS <br></br><br></br>
+                    As a V-learn user and , as a VLEARN contributor you can both gain knowledge and share to help others to gain their knowledge.
+                    
                 </p>
                 <div id="btn">
                     <a href="#services">More details</a>
+                    <br></br>
                 </div>
             </div>
             <div id="image">
@@ -63,108 +72,23 @@ function Home()
         <div id='upload'>
             <div id='content1'>
                 <div class="h12">
+                <br></br>
                     <p>UPLOAD FILES</p>
                 </div>
             <p>
-                Help us to Grow Bigger by Uploading Study Materials<br/>
-                Which You Have Upload File is a completely free file sharing service<br/>
-                that allows you to share files with end-to-end encryption<br/>
-                a link that expires automatically.
+                Help us to grow bigger by uploading study materials. <br></br>
+                People can upload their subject notes, question papers, reference books also video lectures.<br></br><br></br>
+
+                Upload Files Securely, Anonymous, Fast and Free!
             </p>
-            <div>
 
-                <Link to="Upload"><button>Upload Here</button></Link>
+            <div class="upload">
+                <Link to="/Upload"><button>Upload Here</button></Link>
             </div>
+
             </div>
         </div>
 
-
-        <div id='departments'>
-            <div class="h12">
-                <p>DEPARTMENTS</p>
-            </div>
-                <p>All our study materials comes with unlimited disk space. Our support can be as quick as 15 minutes to get a response.</p>
-                <div id="i1">
-                <div class="card">
-                    <img src={cse} alt="CSE"/>
-                    <div class="info">
-                        <a>CSE</a>
-                    </div>
-                </div>
-                </div>
-                <div id="i1">
-                <div class="card">
-                    <img src={it} alt="IT"/>
-                    <div class="info">
-                        <a>IT</a>
-                    </div>
-                </div>
-                </div>
-                <div id="i1">
-                <div class="card">
-                    <img src={ece} alt="ECE"/>
-                    <div class="info">
-                        <a>ECE</a>
-                    </div>
-                </div>
-                </div>
-                <div id="i1">
-                <div class="card">
-                    <img src={eee} alt="EEE"/>
-                    <div class="info">
-                        <a>EEE</a>
-                    </div>
-                </div>
-                </div>
-                <div id="i1">
-                <div class="card">
-                    <img src={mech} alt="MECH"/>
-                    <div class="info">
-                        <a>MECH</a>
-                    </div> 
-                </div>
-                </div>
-                <div id="i1">
-                <div class="card">
-                    <img src={civil} alt="CIVIL"/>
-                    <div class="info">
-                        <a>CIVIL</a>
-                    </div>
-                </div>
-                </div>
-                <div id="i1">
-                <div class="card">
-                    <img src={aids} alt="AIDS"/>
-                    <div class="info">
-                       <a>AIDS</a>
-                    </div>
-                </div>
-                </div>
-                <div id="i1">
-                <div class="card">
-                    <img src={aiml} alt="AIML"/>
-                    <div class="info">
-                        <a>AIML</a>
-                    </div> 
-                </div>
-                </div>
-                <div id="i1">
-                <div class="card">
-                    <img src={cyber} alt="CS"/>
-                    <div class="info">
-                        <a>CYBER SECURITY</a>
-                    </div>
-                </div>
-                </div>
-                <div id="i1">
-                <div class="card">
-                    <img src={metro} alt="mtro"/>
-                    <div class="info">
-                        <a>MECHATRONICS</a>
-                    </div>   
-                </div>
-                </div>
-        </div>
 
         <div id="services">
             <div id="col">
@@ -192,6 +116,113 @@ function Home()
                 <img class="ima4"src={placement} alt="STUDY"/>
                 <a>Placement Preparation</a>
             </div>
+            </div>
+        </div>
+        <div id='departments'>
+            <div class="h12">
+                <p>DEPARTMENTS</p>
+            </div>
+                <p>We are providing the below listed departments study materials .<br></br>Make use of the materials. Keep Learning .  </p>
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={aids} alt="AIDS"/>
+                    <div class="info">
+                       <a>AIDS</a>
+                    </div>
+                </div></Link>
+                </div>
+
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={aiml} alt="AIML"/>
+                    <div class="info">
+                        <a>AIML</a>
+                    </div> 
+                </div></Link>
+                </div>
+
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={civil} alt="CIVIL"/>
+                    <div class="info">
+                        <a>CIVIL</a>
+                    </div>
+                </div></Link>
+                </div>
+
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={cse} alt="CSE"/>
+                    <div class="info">
+                        <a>CSE</a>
+                    </div>
+                </div></Link>
+                </div>
+
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={cyber} alt="CS"/>
+                    <div class="info">
+                        <a>CYBER SECURITY</a>
+                    </div>
+                </div></Link>
+                </div>
+
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={ece} alt="ECE"/>
+                    <div class="info">
+                        <a>ECE</a>
+                    </div>
+                </div></Link>
+                </div>
+
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={eee} alt="EEE"/>
+                    <div class="info">
+                        <a>EEE</a>
+                    </div>
+                </div></Link>
+                </div>
+
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={it} alt="IT"/>
+                    <div class="info">
+                        <a>IT</a>
+                    </div>
+                </div></Link>
+                </div>
+                
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={mech} alt="MECH"/>
+                    <div class="info">
+                        <a>MECHANICAL</a>
+                    </div> 
+                </div></Link>
+                </div> 
+
+                <div id="i1">
+                <Link to="/Four"><div class="card">
+                    <img src={metro} alt="mtro"/>
+                    <div class="info">
+                        <a>MECHATRONICS</a>
+                    </div>   
+                </div></Link>
+                </div>
+        </div>
+
+        <div id="about">
+            <div  class="h13">
+               <p>About us</p>
+            </div>
+            <div class="i">
+                <a href="#"><img class="image1" src={email} alt="gmail"/></a>
+            </div>
+            <div class="il">
+                <a href="#"><img class="image1" src={insta} alt="instagram"/></a>
             </div>
         </div>
 </>

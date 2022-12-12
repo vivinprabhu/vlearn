@@ -1,21 +1,18 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import image from './login and signup img.jpg';
 import './signup.css'
+
+import {Link} from "react-router-dom";
 
 class Signup extends React.Component{
 
    render(){
     const mystyle={
-        backgroundImage:`url('${image}')`,
         height:'100vh',
-        width:'300vh',
-        marginTop:'0px',
-        backgroundSize:'contain',
-        backgroundRepeat:'no-repeat',
-        backgroundPosition:'left',
+        width:'100vh',
     };
+
     return(
+        <div class="background2">
         <div style={mystyle}>
 
         <form>
@@ -57,7 +54,8 @@ class Signup extends React.Component{
         </div>
 
         </form>  
-        </div>      
+        </div>  
+        </div>    
     );
     }
 }

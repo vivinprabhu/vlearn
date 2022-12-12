@@ -1,50 +1,45 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import image from './Upload.png';
 import './upload.css' ;
+
+import {Link} from "react-router-dom";
 
 class Upload extends React.Component{
 
     render(){
-     const mystyle={
-         backgroundImage:`url('${image}')`,
-         height:'100vh',
-         width:'300vh',
-         marginTop:'0px',
-         backgroundSize:'contain',
-         backgroundRepeat:'no-repeat',
-         backgroundPosition:'left',
-     };
+        const mystyle={
+            height:'100vh',
+            width:'100vh',
+        };
 
     return(
+        <div class="background4">
         <div style={mystyle}>
 
-    <div>
-
         <div class="back2">
-        <div class="h10">
-            <p>UPLOAD DOCUMENTS</p>
-        </div>
-        
-        <div class='input0'>
-            <input class='input-field3' type="text" placeholder="Uploader Name" required/>
-        </div>
 
-        <div class='input1'>
-            <select class="input-field4">
-                <option value="Select Department"></option>
-                <option>AERONAUTICAL ENGINEERING</option>
-                <option>ARTIFICAL INTELLIGENCE</option>
-                <option>BIOMEDICAL ENGINEERING</option>
-                <option>CHEMICAL ENGINEERING</option>
-                <option>CIVIL ENGINEERING</option>
-                <option>COMPUTER SCIENCE AND ENGINEERING</option>
-                <option>ELECTRONICS AND COMMUNICATION ENGINEERING</option>
-                <option>ELECTRICAL AND ELECTRONICS ENGINEERING</option>
-                <option>INFORMATION TECHNOLOGY</option>
-                <option>MECHANICAL ENGINEERING</option>
-            </select>
-        </div>
+            <div class="h10">
+                <p>UPLOAD DOCUMENTS</p>
+            </div>
+        
+            <div class='input0'>
+                <input class='input-field3' type="text" placeholder="Uploader Name" required/>
+            </div>
+
+            <div class='input1'>
+                <select class="input-field4">
+                    <option value="Select Department"></option>
+                    <option>ARTIFICAL INTELLIGENCE & DATA SCIENCE</option>
+                    <option>ARTIFICAL INTELLIGENCE & MACHINE LEARNING</option>
+                    <option>CIVIL ENGINEERING</option>
+                    <option>COMPUTER SCIENCE AND ENGINEERING</option>
+                    <option>CYBER SECURITY</option>
+                    <option>ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+                    <option>ELECTRICAL AND ELECTRONICS ENGINEERING</option>
+                    <option>INFORMATION TECHNOLOGY</option>
+                    <option>MECHANICAL ENGINEERING</option>
+                    <option>MECHATRONICS</option>
+                </select>
+            </div>
 
         <div class='input2'>
             <select class="input-field5">
@@ -61,11 +56,11 @@ class Upload extends React.Component{
         </div>
 
         <div>
-            <Link to="/homepage"><input class='btn8' type='submit' value='Upload'></input></Link>
+            <input class='btn8' type='submit' value='Upload'></input>
         </div>
 
         <div>
-        <Link to="/homepage"><input class='btn9' type='submit' value='Back'></input></Link>
+        <Link to="/home"><input class='btn9' type='submit' value='Back'></input></Link>
         </div>
 
         </div>

@@ -1,9 +1,17 @@
+.background4{
+    background-image: url('Upload.png');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: 1300px 700px;
+}
+
+
 .back2{
     position: fixed;
     width: 550px;
     height: 550px;
-    left: 710px;
-    top: 85px;
+    left: 740px;
+    top: 60px;
     background-color: whitesmoke;
     opacity: 100%;
     border-radius: 40px; 
@@ -23,7 +31,7 @@
     position: absolute;
     width: 500px;
     height: 30px;
-    left: 140px;
+    left: 30px;
     top: 110px;
 }
 
@@ -40,7 +48,7 @@
     position: absolute;
     width: 400px;
     height: 25px;
-    left: 175px;
+    left: 80px;
     top: 180px;
 }
 
@@ -57,7 +65,7 @@
     position: absolute;
     width: 400px;
     height: 25px;
-    left: 175px;
+    left: 80px;
     top: 250px;
 }
 
@@ -75,7 +83,7 @@
     position: absolute;
     width: 190px;
     height: 25px;
-    left: 220px;
+    left: 185px;
     top: 330px;
 }
 
