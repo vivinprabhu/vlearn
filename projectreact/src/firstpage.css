@@ -1,0 +1,86 @@
+body{
+    position: absolute;
+    background-color: black;
+}
+
+h1{
+position: absolute;
+width: 752px;
+height: 226px;
+left: 635px;
+top: 60px;
+color: red;
+font-family: 'Inter';
+font-style: bold;
+font-weight: 400;
+font-size: 100px;
+line-height: 218px;
+}
+
+h2{
+    position: absolute;
+width: 752px;
+height: 226px;
+left: 700px;
+top: 45px;
+font-family: 'Inter';
+font-style: bold;
+font-weight: 400;
+font-size: 100px;
+line-height: 218px;
+
+color: white;
+}
+
+
+.btn{
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 15px 15px;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 740px;
+    top: 370px;
+}
+
+.btn:hover{
+    opacity: 1;
+    color: red;
+}
+
+.btn2{
+    background-color: white;
+    color: black;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 15px 15px;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 690px;
+    top: 600px;
+}
+
+.btn2:hover{
+    opacity: 1;
+    color: red;
+}
+
+.input{
+    padding-left: 45em;
+    top: 90px;
+}
+
+.signup{
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px 15px;
+    border: none;
+    cursor: pointer;
+    width: 200%;
+    opacity: 0.9;
+    border-radius: 15px 20px;
+}
